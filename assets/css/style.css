@@ -1,10 +1,10 @@
-* {
+/* {
 	box-sizing: border-box;
-}
-header, section, footer, aside, article {
+}  */
+/*header, section, footer, aside, article {
 	display: block;
 /*	height: auto;         */
-}                             
+                          
 body {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -18,8 +18,9 @@ body {
 	width: 16px;
 	height: auto;       }      */
    
-ul.li {
+li {
 	float: left;
+	padding-left:10px;
 } 
 
 nav {
@@ -32,22 +33,26 @@ nav {
 	display: inline;
 /*	list-style:none;      */
 /*	padding: 5px;   */
-	float: left;                   
+/*	float: left;                   */
 	background-color: white; 
+	float: right;	
 }
 /* p {
-	float: left; */
-}        
-h1 {
-	font: 30px;
-	margin-left: 100px;
+	float: left; */       
+.header-name {
+	font-size: 30px;
+	display: inline;	
+	padding: 10px;
+	float: left;
+	background-color: orange;
+
 /*	width: 50px;            */
 }
 /*header {
 	float: left;
 }       */
-#content-area {
-	position: relative;            
+#main-body {
+/*	position: relative;            */
 	background-color: #ffffff;             
 /*	auto is left right and bottom     */
 /*	position: absolute;		*/
@@ -63,6 +68,10 @@ h1 {
 	-webkit-box-orient:vertical;
 	-webkit-box-flex: 1;          */
 /* -webkit-box-flex: 01; not flexible;  */
+}
+.wrapper {
+	max-width: 	960px;
+	margin:0 auto;
 }
 
 /*.selected {
@@ -86,7 +95,7 @@ h1 {
 	
 }
 .top-header {
-	position: relative;           
+	position: relative;          
 /*	top: 0px;              
 	left: 50px;              */
 	display: inline-block;
@@ -103,9 +112,7 @@ h1 {
 	left: 30px;
 	top: 30px;     */
 }
-header {
-	float: left;
-}
+
 /*.paras {
 	display: inline-block;
 } */
@@ -122,7 +129,7 @@ header {
 	width: 43.333%;
 	width: 100%;
 /*	height: 100%;            */
-	z-index: -1;
+/*	z-index: -1;                     */
 /*	margin:400px;       /* 960  */
 	border: 5px solid black;         
 	background-color: grey;
@@ -150,6 +157,11 @@ header {
 article {
 	float: left;
 }
+
+.textWrap {
+        float: left;
+        margin: 2px;
+        }
 
 .art-1 {
 	float: left;
@@ -208,6 +220,7 @@ aside {
 
 .project {
 /*	display: inline-block;     */
+		float: 	left;
 	} 
 .proj-image{
 	position: relative;
@@ -217,6 +230,11 @@ aside {
 	position: absolute;
 	bottom:3px;
 	left:0;
-	padding: 10px;
+	padding: 30px;
 	display: inline-block;
+}
+header {
+	width: 100%;
+/*  check hw   */	
+	height: 50px; 
 }
