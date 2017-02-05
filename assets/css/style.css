@@ -17,11 +17,7 @@ body {
 	text-decoration: none;	
 	width: 16px;
 	height: auto;       }      */
-   
-li {
-	float: left;
-	padding-left:10px;
-} 
+
 
 nav {
 /*	position: relative;      */
@@ -72,6 +68,7 @@ nav {
 .wrapper {
 	max-width: 	960px;
 	margin:0 auto;
+	border-top: 1px 1px 0px 1px solid black;    /* try this out 8:02 pm; */
 }
 
 /*.selected {
@@ -118,7 +115,7 @@ nav {
 } */
 .main-grey-matter {
 /*	display: inline-block;          */
-	clear: both;       
+	clear: both;   /*  playing with this  7:27 2/4 too this out--------------;  */
 /*	overflow: auto;      stay in container  */
 /*	float: left;      */
 /*	position: relative;        */
@@ -167,12 +164,10 @@ article {
 	float: left;
 	display: inline-block;
 	border: 5px solid orange;
-
-
+	}
 /*	width: 596px;      */
 /*	padding: 20px orange;         
 /*	border: 1px solid orange;       */
-}
 
 #bio-image {
 /*	position: absolute;  */
@@ -190,11 +185,12 @@ aside {
 	float: right;
 }
 .connect-me-box {
-	position: relative;        
+/*	position: relative;     changed 7:48 took out;   */
 /*	float: left;     */
 /*	top: 0px;
 	left: 550px;  */
 	width: 270px;
+	height: 240px;
 	border: 1px solid black;
 	padding: 10px;
 	background-color: white;
@@ -217,7 +213,6 @@ aside {
 .portfolio-whole {
 
 }
-
 .project {
 /*	display: inline-block;     */
 		float: 	left;
@@ -225,6 +220,8 @@ aside {
 .proj-image{
 	position: relative;
 	display: inline-block;
+	height: 	200px;
+	margin: 50px 50px 0px 50px ;
 }
 .proj-title {
 	position: absolute;
@@ -232,9 +229,17 @@ aside {
 	left:0;
 	padding: 30px;
 	display: inline-block;
+/*	display: inline-block;     6:51 changed to inline-block; */
 }
+   
+li {
+	float: left;
+	text-decoration: none;
+	padding-left:10px;
+} 
+
 header {
 	width: 100%;
 /*  check hw   */	
-	height: 50px; 
+	height: 30px; 
 }
