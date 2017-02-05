@@ -1,108 +1,90 @@
-/* {
-	box-sizing: border-box;
-}  */
-/*header, section, footer, aside, article {
-	display: block;
-/*	height: auto;         */
-                          
 body {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align:center;
 	font-size: 18px;
-/*	width: 100%;         */
 	}
 
-/*a {
-	text-decoration: none;	
-	width: 16px;
-	height: auto;       }      */
-
-
 nav {
-/*	position: relative;      */
+/*	position: relative;              taking out at 9:24;     */
 /*	width: 200px;                     */
 /*	top: 0px;
 	left: 40px;						*/
-	position: relative;
 	text-decoration: none;           
-	display: inline;
-/*	list-style:none;      */
+	display: inline;              
 /*	padding: 5px;   */
-/*	float: left;                   */
-	background-color: white; 
-	float: right;	
+	float: right;                   
+	/*        added float left and took out float right back 9:26       */
+	background-color: #ffffff; 
+/*	float: right;	 */
 }
-/* p {
-	float: left; */       
-.header-name {
-	font-size: 30px;
-	display: inline;	
-	padding: 10px;
-	float: left;
-	background-color: orange;
+     
+.selected {
+	text-decoration: none;
+	font-size: 10px;
+	color: #777777;
 
-/*	width: 50px;            */
 }
-/*header {
-	float: left;
-}       */
-#main-body {
+
+.main-body {
 /*	position: relative;            */
-	background-color: #ffffff;             
+/*  background-color: #ffffff;  */
+/*	background-color: pink;                    */
+/*   /* Background pattern from Subtle Patterns */
+	background-image: url("assets/images/handmadepaper_@2X.png");            
 /*	auto is left right and bottom     */
-/*	position: absolute;		*/
-	margin: 10px auto;           
+
+/*	position: absolute;		 */
+	margin: 110px auto;     
 	text-align: center;
-/*	width: 68%;         */
-	width: 960px;
+	width: 68%;         
+	max-width: 960px;
 	height: auto;
-	border: 1px solid black;
-/* anything in our website is a block element; 
-	and do place it side to side */
-/*	display:-webkit-box;
-	-webkit-box-orient:vertical;
-	-webkit-box-flex: 1;          */
-/* -webkit-box-flex: 01; not flexible;  */
+	border: 6px dashed black;
+
+/*      added next section         */
+/*	clear: both;   /*  playing with this  12:12 2/4 took this out--------------;  */
+	width: 43.333%;
+	width: 100%;
+	border: 1px solid black;        
+/*	padding: 20px 0px 20px 0px;             */
+
 }
 .wrapper {
 	max-width: 	960px;
-	margin:0 auto;
-	border-top: 1px 1px 0px 1px solid black;    /* try this out 8:02 pm; */
+	margin:0 auto;    
+	border: 3px purple;    
+/*	border-top: 1px 1px 0px 1px solid black;    /* try this out 8:02 pm; */
 }
-
-/*.selected {
-/*	padding: 5px;            
-	display: inline-block;
-	width: 100px;
-} 					*/
-#header-and-nav {
+/* 
+.header-and-nav {
 /*	width: 68%;	 */
 /*	width: 960px;  */
-/*	float: left;           */
+/*	float: left;           
 	border-color: #cccccc;
-	padding: 10px;
+	background-color: 	black;
+	padding: 10px 20px 10px 20px;
+	border: 1px dashed black;                   took out prev 4 lines at 8:57 2/4    */
 /*	position: absolute;       
 	left: 0px;
 	top: 0px;
 	z-index: -1;            */
 /*	left: 30px;
-	top: 30px;             */
-	border: 1px dashed black; 
-	
-}
-.top-header {
+	top: 30px;           }  */	
+
+/*.top-header {
 	position: relative;          
-/*	top: 0px;              
-	left: 50px;              */
 	display: inline-block;
 	background-color: #4aaaa5; 
 	float: left;
 	color: white;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	border: 1px black; 
-	padding: 2px;
-/*	margin: 1px 35px 0px 25px; */
+	padding: 2px;						took out the previous				*/
+/*	top: 0px;              
+	left: 50px;              */
+/*	margin: 1px 35px 0px 25px; 
+	/* changed this margin 8:23 pm 2/4;
 
 /*	width: 500px;
 	position: absolute;
@@ -110,12 +92,15 @@ nav {
 	top: 30px;     */
 }
 
-/*.paras {
-	display: inline-block;
-} */
+
 .main-grey-matter {
 /*	display: inline-block;          */
-	clear: both;   /*  playing with this  7:27 2/4 too this out--------------;  */
+	clear: both;   /*  playing with this  7:27 2/4 took this out--------------;  */
+	width: 43.333%;
+	width: 100%;
+	border: 5px solid black;         
+	background-color: grey;
+/*	background-image: url("assets/images/handmadepaper_@2X.png");
 /*	overflow: auto;      stay in container  */
 /*	float: left;      */
 /*	position: relative;        */
@@ -123,33 +108,31 @@ nav {
 	left: 0px;                         */
 /*	width: 270px;           */
 /*	width: 650px;            */
-	width: 43.333%;
-	width: 100%;
 /*	height: 100%;            */
-/*	z-index: -1;                     */
 /*	margin:400px;       /* 960  */
-	border: 5px solid black;         
-	background-color: grey;
 }
 /*.small {
 	width: 450px;
 	height: auto;
 	padding: 3px;
 }       */
-.aboutme-bio {
+.aboutme-bio-box {
 /*	overflow: auto;               */
-	position: relative;                 
+/*	position: relative;                took this out 9:13 ; */
+	padding: 15px;
 	width: 350px;
 	height: auto;
-	margin-left: 5px;
-	top: 50px;
-	left: 20px;					*/
-/*	display: inline;           */
-	float: left;
-	text-align: left;
+	margin-left: 75px;
 /*	width: 650px;          */
 	border: 1px solid black;
-	background-color: #ffffff;            
+	background-color: #ffffff;   
+/*	margin: 100px 0px 100px 100px; */
+/*	top: 50px;
+	left: 20px;					*/
+/*	display: inline;           */
+/*	float: left;			*/
+	text-align: left;                 
+
 }
 article {
 	float: left;
@@ -174,41 +157,57 @@ article {
 /*	float: left;           */
 /*	display: inline-block;          */
 }
-.description {
+
+/*.description --  */
+p {
 	position: relative;
 	margin: 0 auto 0 auto;
-	padding: 20px;
+	padding: 2px;
+	font-size: 15px;
 /*	float: left;      */
 }
 
 aside {
 	float: right;
 }
+
 .connect-me-box {
 /*	position: relative;     changed 7:48 took out;   */
 /*	float: left;     */
 /*	top: 0px;
 	left: 550px;  */
 	width: 270px;
-	height: 240px;
+	height: auto;
 	border: 1px solid black;
 	padding: 10px;
-	background-color: white;
-		clear: both;
+	background-color: #ffffff;
+	margin: 0px 100px 0px 20px;
+/*	margin: 0px 100px 10px 20px;  */
+
+
+/*	clear: both;                          */
+
 }
 
 .footer-tag {
 /*	float: bottom;             */
-/*	position: relative;      */
-	clear: both;
-/*	bottom: 0px;
+/*	position: relative;      
+	clear: both;          
+	bottom: 0px;
 	left: 0px;                   */
+	clear: both;          
 	border: 1px solid black;
 	font-size: 8px;
 	padding: 20px 20px 20px 20px;
 	background-color: #666666;
 	text-align: center;
 	color: white;
+	max-width: 918px;
+	margin: 10px auto;   
+/*	position: fixed;
+	bottom: 0px;
+	left: 0px;          */
+
 }
 .portfolio-whole {
 
@@ -221,7 +220,7 @@ aside {
 	position: relative;
 	display: inline-block;
 	height: 	200px;
-	margin: 50px 50px 0px 50px ;
+	margin: 45px 45px 0px 45px ;
 }
 .proj-title {
 	position: absolute;
@@ -229,17 +228,59 @@ aside {
 	left:0;
 	padding: 30px;
 	display: inline-block;
-/*	display: inline-block;     6:51 changed to inline-block; */
 }
    
 li {
 	float: left;
 	text-decoration: none;
 	padding-left:10px;
-} 
+}           
+
+.main-header-name {
+/*	font-family: 'Georgia', Times, Times New Roman, serif;  */
+/*	background-color:#ffffff;     */
+	border-color: #cccccc;
+	color: white;
+	background-color: #4aaaa5; /* teal */   
+	padding: 20px;
+	width: 170px;
+	margin-left: 120px;
+
+/*	border: 1px solid black;         */
+
+}
+/*gone-out from 1st page */
+.header-name {
+	font-size: 30px;
+	display: inline;	
+	padding: 10px;
+	float: left;
+	background-color: orange; 
+}                                
+
 
 header {
-	width: 100%;
+/*	width: 100%;             */
+/*	max-width: 100%            */
+/*	max-width: 	330px;             */
+	font-family: 'Georgia', Times, Times New Roman, serif;      
 /*  check hw   */	
 	height: 30px; 
+/* this section i added after changes
+/*	border-color: #cccccc;
+	padding: 10px;
+	border: 1px dashed black;  */
 }
+
+h1, h2, h4 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+}
+
+
+/*	width: 50px;            */
+
+/*header {
+	float: left;
+}       */
+
