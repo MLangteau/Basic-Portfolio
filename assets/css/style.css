@@ -78,7 +78,7 @@ footer {
 
 .section-box {	
 	padding: 15px;
-	width: 350px;
+	width: 95%;
 	height: auto;
 	background-color: #ffffff;   
 	text-align: left;
@@ -107,8 +107,8 @@ footer {
 
 .proj-image {
 	display: inline-block;
-	width: 	150px;
-	margin: 25px 25px 0px 0px ;            
+	width: 	50%;
+	margin: 25px 25px 0px 0px;
 }
 
 .proj-title {
